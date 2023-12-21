@@ -5,8 +5,8 @@ on:
       - '*.tape'
 
   push:
-    paths:
-      - '*.tape'
+    branches:
+      - main
 
 env:
   TERM: "xterm-256color"
