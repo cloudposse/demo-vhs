@@ -1,6 +1,6 @@
 # Demo of Glyphs
 
-Output docs/demo.gif
+Output demo.gif
 
 Set Theme "Monokai Vivid"
 
