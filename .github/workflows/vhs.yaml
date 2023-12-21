@@ -43,10 +43,10 @@ jobs:
         if: steps.auto-commit.outputs.changes_detected == 'true'
         run: |
           echo "## Demo GIF from GHA" >> $GITHUB_STEP_SUMMARY
-          echo "This was generated from this GitHub Action run." >>  >> $GITHUB_STEP_SUMMARY
+          echo "This was generated from this GitHub Action run." >> $GITHUB_STEP_SUMMARY
           echo "![Demo GIF](https://github.com/${{ github.repository }}/blob/${{ steps.auto-commit.outputs.commit_hash }}/docs/demo-gha.gif?raw=true)" >> $GITHUB_STEP_SUMMARY
           echo "## Demo GIF from MacOS" >> $GITHUB_STEP_SUMMARY
-          echo "This is the expected output as seen on a MacOS terminal Version 2.14 (450)" >>  >> $GITHUB_STEP_SUMMARY
+          echo "This is the expected output as seen on a MacOS terminal Version 2.14 (450)" >> $GITHUB_STEP_SUMMARY
           echo "![Demo GIF](https://github.com/${{ github.repository }}/blob/${{ steps.auto-commit.outputs.commit_hash }}/docs/demo-macos.gif?raw=true)" >> $GITHUB_STEP_SUMMARY
 
 
