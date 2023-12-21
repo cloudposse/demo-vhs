@@ -30,14 +30,14 @@ Set PlaybackSpeed 0.50
 
 Set Shell bash
 
-# Test glyph rendering
-Hide
-Type "export > env.txt" Enter
-Sleep 100ms
-Show
-
+# Test glyph rendering 
 Type "# Test gylphs: ⧉  ✗ ⨠ " Enter
 Sleep 5s
+
+Type "# Save the environment to a file, for debugging" Enter
+Type "printenv > env.txt" Enter
+Sleep 100ms
+
 
 Type "# That's all folks!" Enter
 Sleep 5s
